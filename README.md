@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img src="https://user-images.githubusercontent.com/131008349/233222305-871a8d99-d45c-47f9-bf65-51b47aa95f2a.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://user-images.githubusercontent.com/131008349/233228173-b68868df-571a-4856-94e1-e2d3117274ab.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
