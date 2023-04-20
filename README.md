@@ -22,7 +22,7 @@ In this tutorial, we create a server virtual machine and a client virtual machin
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://user-images.githubusercontent.com/131008349/233221880-0a370695-165c-4a5b-877c-8ced25e0dba4.PNG" height="80%" width="80%" alt="Create subscription in Azure"/>
+<img src="https://user-images.githubusercontent.com/131008349/233227592-a293f528-7a9d-4d65-9662-7e6e50f4e8a4.PNG" height="80%" width="80%" alt="Create subscription in Azure"/>
 </p>
 <p>
 Login to portal.azure.com and create subscription for your resource groups, subnet mask, and virtual machine to be housed under. 
