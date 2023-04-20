@@ -1,11 +1,11 @@
-# active-directory
-
+# Active-Directory
+Creating a domain controller, deploying, and demonstarting Active Directory
 <p align="center">
-<img src="https://images.prismic.io/gatsby-landing-pages/1a68fcb1-42cf-4102-9742-13db46d1aa18_home-section-1.png?auto=format%2Ccompress" alt="VPN Usage"/>
+<img src="https://jumpcloud.com/wp-content/uploads/2016/07/AD1.png" alt="VPN Usage"/>
 </p>
 
-<h1>Create virtual machine, connect to VPN using VPN Proton, and observe the IP address changes </h1>
-In this tutorial, we observe virtual machine IP address and location before then after connecting to a Japanese VPN server. <br />
+<h1>Installing and demonstrating Microsoft Active Directory </h1>
+In this tutorial, we create a server virtual machine and a client virtual machine to deploy and demonstrate how Active Directory is utilized. <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -13,11 +13,11 @@ In this tutorial, we observe virtual machine IP address and location before then
 - Windows Remote Desktop
 - Various Command-Line Tools
 - Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- VPN Proton
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
+- Windows 10 Server
 
 <h2>Actions and Observations</h2>
 
