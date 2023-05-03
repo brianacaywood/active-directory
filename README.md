@@ -9,7 +9,7 @@ In this tutorial, we create a server virtual machine and a client virtual machin
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computer)
 - Windows Remote Desktop
 - Various Command-Line Tools
 - Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
@@ -25,7 +25,7 @@ In this tutorial, we create a server virtual machine and a client virtual machin
 <img src="https://user-images.githubusercontent.com/131008349/233227592-a293f528-7a9d-4d65-9662-7e6e50f4e8a4.PNG" height="80%" width="80%" alt="Create subscription in Azure"/>
 </p>
 <p>
-Login to portal.azure.com and create subscription for your resource groups, subnet mask, and virtual machine to be housed under. 
+Login to Portal.Azure.com and create a VM but instead of using Windows 10 (21H2), you will use the Windows 10 Server for the imaging. Keep in mind the login credentials for each of the VM's.
 </p>
 <br />
 
@@ -33,7 +33,7 @@ Login to portal.azure.com and create subscription for your resource groups, subn
 <img src="https://user-images.githubusercontent.com/131008349/233227735-e30727e1-1a7a-4c2f-ab27-912a8e2a7cb9.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a client VM using the Windows 10 imaging that will access the domain controller later. 
 </p>
 <br />
 
@@ -41,7 +41,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233228173-b68868df-571a-4856-94e1-e2d3117274ab.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In the client VM, access the command line to attempt to ping the Domain Controller. Observe that because we have not made the IP address static for the Domain Controller to make the IP address reliably discoverable over the network and we're receiving no reply from the Domain Controller.
 </p>
 <br />
 
@@ -49,7 +49,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233228334-96cae009-d919-4bb4-bb0f-4af334397213.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Make the Domain Controller IP address static in Azure by going to the VM that you made the Windows Server, locating "Networking"in the action menu, click the "Network interface", then under the settings click "IP Configurations" then click the private IP address and change it from "Dynamic" to "Static". 
 </p>
 <br />
 
@@ -57,7 +57,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233230521-2f79cc75-2899-4b53-ba39-e8796e4cfc75.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Copy the public IP address and remote into the server VM using Remote Desktop Connection. 
 </p>
 <br />
 
