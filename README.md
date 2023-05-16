@@ -57,7 +57,7 @@ Make the Domain Controller IP address static in Azure by going to the VM that yo
 <img src="https://user-images.githubusercontent.com/131008349/233230521-2f79cc75-2899-4b53-ba39-e8796e4cfc75.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Copy the public IP address and remote into the server VM using Remote Desktop Connection. 
+Copy the Domain Controller public IP address and remote into the server VM using Remote Desktop Connection. 
 </p>
 <br />
 
@@ -65,7 +65,7 @@ Copy the public IP address and remote into the server VM using Remote Desktop Co
 <img src="https://user-images.githubusercontent.com/131008349/233231605-3a40e585-9ceb-4142-bb21-8e28904fdfcd.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once logged in, right click the start menu and type "control". Click "System Security", then "Windows Firewall Defender". On the left side action menu select "Advanced Settings". Click "Inbound Rules" in the left side action menu and sort by "Protocol". Enable all ICMP4 protocols.
 </p>
 <br />
 
@@ -73,7 +73,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233231815-f1e2c1a1-4621-4835-a4e3-ee8af4abb892.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Perpetually ping Domain Controller private after enabling ICMP4 in the client VM. Observe there is now a reply.  
 </p>
 <br />
 
@@ -81,7 +81,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233231965-7665c02c-8751-4ee4-84da-21752d59c9e5.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Add roles and features in the server manager of the Domain Controller and add Active Directory Domain Services. 
 </p>
 <br />
 
@@ -89,7 +89,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233232406-86971e73-3191-4c7e-adbb-defc9117a943.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next through prerequisites and finish install. 
 </p>
 <br />
 
@@ -97,7 +97,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233232666-b82ffe00-454b-4fe7-b875-fc3afe9252bb.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Promote deployment by creating domain name.
 </p>
 <br />
 
@@ -105,7 +105,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233232929-20655c30-143f-451c-82d9-f30d0954a11c.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create password for domain. 
 </p>
 <br />
 
@@ -113,7 +113,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233233217-f81987c0-029e-49ae-8c56-029b3b81aa03.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Right click the domain in the left side action menu and add organizational units - one for "_Employees" and another for "_Admins".
 </p>
 <br />
 
@@ -121,7 +121,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233233944-105f7b01-e539-42af-8901-0d2a07d5b90a.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In the "_Admins" organizational unit, create an admin user.
 </p>
 <br />
 
@@ -129,7 +129,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233234588-ceab6b33-cc86-4d74-91ca-b88ecffb1c77.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Make new user an admin by going to the properties and assigning the user to be apart of the "Domain Admins".
 </p>
 <br />
 
@@ -137,7 +137,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233234983-d2b3cc39-fcc7-4fc6-a64f-b0e98d8afa0b.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Login the Domain Controller with the admin credentials. You might have to use the domain name.com\admin logon name.
 </p>
 <br />
 
@@ -145,7 +145,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233235296-2f5234c3-de70-480a-83aa-8123b9be6dce.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Then login to the client VM using the admin login credentials. Again, you might have to use the domain name.com\admin logon name to gain access. 
 </p>
 <br />
 
@@ -153,7 +153,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233235614-a400e791-eeda-41c1-9062-ef2f2d768275.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Right click the start menu and click "Settings", "Systems", then "Remote Desktop" on the left side action menu. In the advanced settings, allow the domain users group to remote into the client VM. 
 </p>
 <br />
 
@@ -161,7 +161,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233235908-9033f503-1d32-4588-bca4-3d026bb90844.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Azure, locate the client vm, in the left side action menu click "Networking", then "Network interface" and make the client VM DNS settings the Domain Controller's private IP address.
 </p>
 <br />
 
