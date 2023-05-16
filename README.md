@@ -33,7 +33,7 @@ Login to Portal.Azure.com and create a VM but instead of using Windows 10 (21H2)
 <img src="https://user-images.githubusercontent.com/131008349/233227735-e30727e1-1a7a-4c2f-ab27-912a8e2a7cb9.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a client VM using the Windows 10 imaging that will access the domain controller later. 
+Create a client VM using the Windows 10 imaging that will access the Domain Controller later. 
 </p>
 <br />
 
@@ -169,7 +169,7 @@ In Azure, locate the client vm, in the left side action menu click "Networking",
 <img src="https://user-images.githubusercontent.com/131008349/233236296-a9bccff8-0acb-437c-8c5c-6ccd1fcd557f.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go to the command line in the client VM and use the "nslookup" command to check that the IP address has been changed to the Domain Controller's private IP.
 </p>
 <br />
 
@@ -177,7 +177,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233236675-0d811da3-81ad-44f3-aae8-7813b3fbabad.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In the server vm, right click the start menu and run Windows PowerShell ISE as an admin. In a new file, copy and paste the script given from the list of files. The purpose of the script is to create new users that will have access to the servers to simulate a University or Office where you can login in from multiple computers without having to create a new login each time.
 </p>
 <br />
 
@@ -185,7 +185,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233237042-21ca6256-3c48-401a-a3cf-fee81db8231c.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+View the new users created in Active Directory by going to the "Employees" folder created earlier in the project.
 </p>
 <br />
 
@@ -193,6 +193,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://user-images.githubusercontent.com/131008349/233237680-4630bbf1-6a64-431f-a2a0-45c8050eca7a.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To check to see if the Active Directory is ready for use, select one of the users created and login in to the client VM. If successful, you should be logged in as the new user.
 </p>
 <br />
